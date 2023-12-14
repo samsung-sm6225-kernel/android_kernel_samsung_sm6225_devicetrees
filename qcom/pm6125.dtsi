@@ -78,6 +78,13 @@
 				qcom,hw-settle-time = <200>;
 				qcom,pre-scaling = <1 1>;
 			};
+
+			batt_id {
+				reg = <ADC5_GPIO4_400K_PU>;
+				label = "batt_id";
+				qcom,hw-settle-time = <200>;
+				qcom,pre-scaling = <1 1>;
+			};
 		};
 
 		pm6125_adc_tm: adc_tm@3500 {

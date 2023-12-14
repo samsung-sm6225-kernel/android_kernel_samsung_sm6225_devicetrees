@@ -184,6 +184,8 @@
 		      "pe_start";
 };
 
+/*
 &usb0 {
 	extcon = <&pm7250b_pdphy>, <&pm7250b_charger>, <&eud>;
 };
+*/

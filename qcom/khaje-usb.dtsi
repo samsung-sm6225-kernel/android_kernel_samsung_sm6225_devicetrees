@@ -65,6 +65,7 @@
 			reg = <0x4e00000 0xe000>;
 
 			iommus = <&apps_smmu 0x120 0x0>;
+			qcom,smmu-s1-bypass;
 			qcom,iommu-dma = "atomic";
 			qcom,iommu-dma-addr-pool = <0x50000000 0x60000000>;
 
@@ -135,7 +136,7 @@
 		reset-names = "phy_reset";
 		qcom,param-override-seq =
 			<0xa6 0x6c>,  /* override_x0 */
-			<0x85 0x70>,  /* override_x1 */
+			<0x04 0x70>,  /* override_x1 */
 			<0x16 0x74>;  /* override_x2 */
 	};
 
