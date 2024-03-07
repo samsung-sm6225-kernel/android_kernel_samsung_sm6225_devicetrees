@@ -160,9 +160,10 @@ And public attribution of longcheer platforms
         eint_name = "chr_stat";
         sc,intr-gpio = <&tlmm 96 0>;
         charger_name = "primary_chg";
+	dpdm-supply = <&usb2_phy0>;
         sc,sc8989x,ico-en = <0>;
         sc,sc8989x,hvdcp-en = <0>;
-        sc,sc8989x,auto-dpdm-en = <1>;
+        sc,sc8989x,auto-dpdm-en = <0>;
         sc,sc8989x,vsys-min = <5>; /*3500mV*/
         sc,sc8989x,vbatmin-sel = <0>; /*0:2.9V 1:2.5V*/
         sc,sc8989x,itrick = <3>; /*60 + val *60*/
